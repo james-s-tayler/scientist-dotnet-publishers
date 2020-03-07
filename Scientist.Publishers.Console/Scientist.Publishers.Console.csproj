@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>Scientist.Publishers.Console</PackageId>
+        <Version>1.0.1</Version>
+        <Authors>James Tayler</Authors>
+        <PackageDescription>ConsoleResultPublisher for Scientist.NET</PackageDescription>
+        <RepositoryUrl>https://github.com/nicostouch/scientist-dotnet-publishers</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+      <PackageReference Include="Scientist" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
