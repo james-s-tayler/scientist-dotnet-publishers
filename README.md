@@ -1,12 +1,15 @@
-# ConsoleResultPublisher for [Scientist.NET](https://github.com/scientistproject/Scientist.net)
+# Publishers for [Scientist.NET](https://github.com/scientistproject/Scientist.net)
 
 Every young scientist knows that it's publish or perish! 
 
-So to get you up and running quickly with [Scientist.NET](https://github.com/scientistproject/Scientist.net) here is a `ConsoleResultPublisher`
+So to get you up and running quickly with [Scientist.NET](https://github.com/scientistproject/Scientist.net) here some packages to help you publish results to different sinks.
 
-### Add the NuGet package
+### Add a publisher
 
-`Install-Package Scientist.Publishers.Console`
+| Publisher  | NuGet Package |
+| ------------- | ------------- |
+| Console | `Install-Package Scientist.Publishers.Console` |
+| Serilog | `Install-Package Scientist.Publishers.Serilog` |
 
 ### Configure the publisher
 
@@ -79,7 +82,7 @@ Next, don your labcoat, strap on your goggles and run your experiment!
             return output;
         }
 
-Experiments will be published to the console like so. No peer review needed!
+Experiments will be published via the configured publisher. No peer review needed!
 
     4f5c93b6-b946-4c90-b6c5-fb3a39d95323 experiment_name: experimental-fizz-buzz
     4f5c93b6-b946-4c90-b6c5-fb3a39d95323 results: {"matched":1,"mismatched":0,"ignored":0}
