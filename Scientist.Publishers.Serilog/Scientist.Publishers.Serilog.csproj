@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <PackageId>Scientist.Publishers.Serilog</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>James Tayler</Authors>
         <PackageDescription>SerilogResultPublisher for Scientist.NET</PackageDescription>
         <RepositoryUrl>https://github.com/nicostouch/scientist-dotnet-publishers</RepositoryUrl>
@@ -12,11 +12,8 @@
 
     <ItemGroup>
       <PackageReference Include="Scientist" Version="2.0.0" />
+      <PackageReference Include="Scientist.Publishers.Shared" Version="1.0.0" />
       <PackageReference Include="Serilog" Version="2.9.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Scientist.Publishers.Shared\Scientist.Publishers.Shared.csproj" />
     </ItemGroup>
 
 </Project>
